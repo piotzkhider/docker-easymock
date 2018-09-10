@@ -3,7 +3,8 @@ version: '2'
 services:
   easymock:
     build: easymock
+    working_dir: /data
     ports:
-      - "8001:3000"
+      - "3000:3000"
     volumes:
       - ./easymock/json:/data
